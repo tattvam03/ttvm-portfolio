@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+  <title>Tattvam Chaturvedi</title>
+</head>
+
+<body>
+  <header class="header container">
+    <nav>
+      <ul class="header__menu">
+        <li>
+          <a class="header__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="header__link" href="#featured">Work</a>
+        </li>
+        <li>
+          <a class="header__link" href="#contact">Contact</a>
+        </li>
+        <li class="header__line"></li>
+        <li>
+          <button aria-label="theme-toggle btn" id="theme-toggle" class="header__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a class="header__resume btn" href="public/Tattvam_Chaturvedi_Resume.pdf"
+            download="Tattvam_Chaturvedi_Resume.pdf">
+            Resume
+          </a>
+        </li>
+      </ul>
+      <button aria-label="mobile nav button" class="header__bars">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <nav>
+      <ul class="mobile-nav__menu">
+        <li>
+          <a class="mobile-nav__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#featured">Work</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#contact">Contact</a>
+        </li>
+        <li class="mobile-nav__link-line"></li>
+        <li>
+          <button aria-label="theme-toggle btn" id="theme-toggle" class="mobile-nav__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+            </svg>
+        </li>
+        <li>
+          <a class="mobile-nav__btn btn" href="#">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- End Of Mobile Navigation -->
+
+  <main>
+    <section class="hero container">
+      <img class="hero__img" src="./main.jpg" alt="Profile picture">
+      <h2 class="hero__subtitle">Hi, I'm Tattvam 👋</h2>
+      <h1 class="hero__title">FRONT-END <br>Web Developer</h1>
+      <p class="hero__description">I am a <strong>Web Developer</strong>, I love to code, and make cool things with
+        code. Presently majoring in <strong>Computer Science Engineering</strong>.</p>
+      <a class="hero__btn btn" href="mailto:tattvamcodes@gmail.com" target="_blank">Reach Out</a>
+    </section>
+    <section id="about" class="about container section">
+      <div class="about__content">
+        <h2 class="about__title">About me🙎🏻</h2>
+        <!-- <h3>✨a little about me✨</h3> -->
+        <p class="about__description"><strong>Hey, I’m Tattvam!</strong> A passionate B.Tech CS student who loves
+          building cool things with code. <strong>From web development to AI/ML and robotics,</strong> I enjoy turning
+          ideas into reality. <strong>As the Tech Lead at RobogeniX and a some hackathon winner,</strong> I’ve worked on
+          projects like a spy drone and an AI-powered Raag recognition system.</p>
+        <p class="about__description">Beyond coding, <strong>I’m a huge football fan (Visca el Barça), love gaming
+            (Brawlhalla, COD, Valorant), and was once a top-tier Free Fire E-sports player.</strong> I also have a thing
+          for experimenting with coffee recipes—perfect for fueling those late-night coding sessions. Whether it's
+          mountains, sunsets, or just vibing with good music, I find inspiration everywhere.</p>
+        <p class="about__description">I share my journey on X <a>@tattvamcodes</a> — follow along for my projects,
+          insights, and tech adventures!</p>
+        <hr class="about__hr">
+        <h3 class="about__subtitle">Technologies:💻</h3>
+        <div class="about__ul-container">
+          <ul class="about__ul">
+            <li class="about__list">Python</li>
+            <li class="about__list">JavaScript</li>
+            <li class="about__list">HTML</li>
+            <li class="about__list">CSS</li>
+          </ul>
+          <ul class="about__ul">
+            <li class="about__list">MERN-STACK</li>
+            <li class="about__list">TailwindCss</li>
+            <li class="about__list">MySQL</li>
+            <li class="about__list">AI/ML</li>
+          </ul>
+        </div>
+      </div>
+      <div class="about__img-wrapper">
+        <img class="about__img lazy loading" src="https://fakeimg.pl/720" data-src="/about.jpg" alt="Profile picture">
+      </div>
+    </section>
+    <section id="featured" class="featured container section">
+      <!-- <h3 class="featured__subtitle">Featured Projects</h3>
+      <div class="featured__wrapper">
+        <h2 class="featured__title">Slaying The Dragon</h2>
+        <a class="featured__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+          </svg>
+        </a>
+      </div>
+      <p class="featured__description">Cillum voluptate tempor cillum culpa cupidatat labore voluptate ullamco voluptate
+        culpa sunt nulla non. Ad cupidatat dolore quis amet pariatur consectetur ullamco. Officia quis id velit duis
+        cupidatat sunt deserunt do aliquip nulla laboris.</p>
+      <div class="featured__info-container">
+        <div>
+          <h3 class="featured__label">Tech stack</h3>
+          <ul class="featured__tech-stack">
+            <li class="featured__info">MERN</li>
+            <li class="featured__info">AI/ML</li>
+            <li class="featured__info">Python</li>
+            <li class="featured__info">JAVA</li>
+            <li class="featured__info">JAVA</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="featured__label">Project type</h3>
+          <p class="featured__info">Thesis on ML & DL</p>
+        </div>
+        <div>
+          <h3 class="featured__label">Time-Line</h3>
+          <p class="featured__info">July'2024 - present</p>
+        </div>
+      </div>
+      <div class="featured__img-container">
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/1123x750" data-src="/first_image.jpeg"
+            alt="Slaying The Dragon first">
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/1122x750" data-src="/second_image.webp"
+            alt="Slaying The Dragon second">
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/1125x750" data-src="/third_image.jpeg"
+            alt="Slaying The Dragon third">
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/1260x734" data-src="/fourth_image.jpeg"
+            alt="Slaying The Dragon fouth">
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/600x338" data-src="/five_image.jpeg"
+            alt="Slaying The Dragon fiveth">
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/600x337" data-src="/six_image.jpeg"
+            alt="Slaying The Dragon sixth">
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/600x400" data-src="/seven_image.jpeg"
+            alt="Slaying The Dragon seveneth">
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" src="https://fakeimg.pl/600x401" data-src="/eight_image.jpeg"
+            alt="Slaying The Dragon eigth">
+        </div>
+      </div> -->
+    </section>
+    <section class="work container section">
+      <h2 class="work__title">My Projects🚀</h2>
+      <p class="work__description">
+        I have worked on a diverse range of projects across multiple domains, leveraging various modern technologies to
+        build scalable, efficient, and user-friendly applications. My projects span different fields, including web
+        development, artificial intelligence, drone and robotics, e-commerce, automation, and embedded systems, each
+        utilizing a unique set of tools and frameworks.
+      </p>
+
+      <div class="work__container">
+        <!-- project 1 -->
+        <h3 class="work__project-title">Wax Motif</h3>
+        <div class="work__img-wrapper work__image1">
+          <img class="lazy" src="https://fakeimg.pl/900" data-src="public/old-portfolio.png" alt="Wax Motif website">
+        </div>
+        <div class="work__project work__content1">
+          <h3 class="work__project-subtitle">Old Portfolio📑</h3>
+          <p class="work__project-description1">My previous portfolio was built entirely using HTML, CSS, and
+            JavaScript, focusing on simplicity and responsiveness. It included smooth animations, interactive sections,
+            and a well-structured layout to showcase my skills and projects effectively.</p>
+          <p class="work__project-description2">I designed it to be user-friendly, ensuring a seamless experience across
+            different devices. Additionally, I deployed it online, making it easily accessible for anyone to explore my
+            work.</p>
+          <a class="btn work__project-btn" href="https://portfolio-website-rho-ten-92.vercel.app/index.html">website</a>
+        </div>
+
+        <!-- project 2 -->
+        <h3 class="work__project-title">Draze Force</h3>
+        <div class="work__img-wrapper work__image2">
+          <img class="lazy" src="https://fakeimg.pl/900" data-src="public/spy-drone.jpg" alt="Wax Motif website">
+        </div>
+        <div class="work__project work__content2">
+          <h3 class="work__project-subtitle">Spy-Drone🚁</h3>
+          <p class="work__project-description1">I built a compact spy drone designed for privacy and surveillance. It is
+            extremely small, nearly silent, and equipped with a high-efficiency camera for capturing high-quality photos
+            and videos. Its lightweight design ensures smooth maneuverability while remaining discreet in operation.</p>
+          <p class="work__project-description2">The drone features a long-lasting battery for extended use and includes
+            an automatic "Return to Home" function, allowing it to navigate back safely on its own. Its compact size
+            makes it easy to transport, making it a reliable tool for various surveillance needs.</p>
+          <a class="btn work__project-btn" href="#">website</a>
+        </div>
+
+        <!-- project 3 -->
+        <h3 class="work__project-title">Artren</h3>
+        <div class="work__img-wrapper work__image3">
+          <img class="lazy" src="https://fakeimg.pl/900" data-src="public/Yelpcamp.png" alt="Wax Motif website">
+        </div>
+        <div class="work__project work__content3">
+          <h3 class="work__project-subtitle">YelpCamp-Campground🏕️</h3>
+          <p class="work__project-description1">YelpCamp is a fully functional campground website built using
+            JavaScript, HTML, EJS, CSS, and Bootstrap. It allows users to explore, create, and manage campgrounds with a
+            seamless CRUD system. The platform features user authentication, authorization, and an intuitive review
+            system with star ratings. Interactive maps and image uploads enhance the experience, making it easy to find
+            and showcase beautiful camping spots.</p>
+          <p class="work__project-description2">Designed with security and performance in mind, YelpCamp includes error
+            handling, data validation, and flash messaging for smooth user interactions. The platform is optimized with
+            a clean and responsive UI, a dynamic cluster map for better navigation, and is fully deployed for real-world
+            use.</p>
+          <a class="btn work__project-btn" href="https://github.com/tattvam03/YELPCAMP">website</a>
+        </div>
+
+        <!-- project 4 -->
+        <h3 class="work__project-title">Platform Pro</h3>
+        <div class="work__img-wrapper work__image4">
+          <img class="lazy" src="https://fakeimg.pl/900" data-src="public/water-reminder-app.jpg" alt="Wax Motif website">
+        </div>
+        <div class="work__project work__content4">
+          <h3 class="work__project-subtitle">Water-Reminder-App🔔</h3>
+          <p class="work__project-description1">This Python-based app helps you stay hydrated by setting daily water
+            intake goals and reminding you with alarms and messages. Built with Pygame, it ensures you never forget to
+            drink water at the right time.</p>
+          <p class="work__project-description2">The app features a fun animated water glass that empties as you log your
+            drinks. Once you reach your daily goal, it sends a celebratory message, making hydration both easy and
+            rewarding! 💧</p>
+          <a class="btn work__project-btn" href="https://github.com/tattvam03/Water-Reminder-App">website</a>
+        </div>
+
+        <!-- project 5 -->
+        <h3 class="work__project-title">Wallys Vegan</h3>
+        <div class="work__img-wrapper work__image5">
+          <img class="lazy" src="https://fakeimg.pl/900" data-src="public/diary.png" alt="Wax Motif website">
+        </div>
+        <div class="work__project work__content5">
+          <h3 class="work__project-subtitle">django-journal📒</h3>
+          <p class="work__project-description1">This is a personal web diary application crafted with Django and Python.
+            It offers a private and secure digital space for journaling your thoughts and experiences. Users can
+            effortlessly create, review, edit, and delete diary entries with titles and content through an intuitive web
+            interface.</p>
+          <p class="work__project-description2">Built upon Django, the application utilizes its admin panel, class-based
+            views, and template system for efficient development. This project demonstrates essential web development
+            concepts like CRUD operations, user authentication for privacy, and stylish presentation, all within
+            Django's organized framework.</p>
+          <a class="btn work__project-btn" href="https://github.com/tattvam03/django-journal">website</a>
+        </div>
+
+        <!-- project 6 -->
+        <h3 class="work__project-title">Old Portfolio</h3>
+        <div class="work__img-wrapper work__image6">
+          <img class="lazy" src="https://fakeimg.pl/900" data-src="public/url-shortner.png" alt="Wax Motif website">
+        </div>
+        <div class="work__project work__content6">
+          <h3 class="work__project-subtitle">short-circuit-url🔗</h3>
+          <p class="work__project-description1">This project creates a powerful URL shortening service using FastAPI, a
+            fast Python framework. The API converts long URLs into short, easily shareable links. Clicking a shortened
+            link swiftly redirects users to the original URL. Beyond basic shortening, secure administrative endpoints,
+            accessible with secret keys, enable URL management, click tracking, and link deactivation.</p>
+          <p class="work__project-description2">Showcasing FastAPI's performance and modern Python integration, the
+            application uses SQLAlchemy with SQLite for data management, demonstrating API design, request handling,
+            data validation via Pydantic, and clean code structuring for maintainability.</p>
+          <a class="btn work__project-btn" href="https://github.com/tattvam03/short-circuit-url">website</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container section">
+      <h2 class="contact__title">Get In Contact☎️</h2>
+      <p class="contact__description">If you have a project, a business inquiry, or just want to connect, feel free to
+        reach out. I’ll get back to you as soon as possible!🤝</p>
+      <a class="contact__btn btn" href="mailto:tattvamcodes@gmail.com" target="_blank">Reach Out</a>
+    </section>
+
+  </main>
+  <footer class="footer container section"></footer>
+  <h3 class="footer__title">~ tattvamcodes ~</h3>
+
+  <!-- Back to top button -->
+  <button aria-label="back to top" class="back-to-top-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path fill-rule="evenodd"
+        d="M12 21.75a.75.75 0 0 1-.75-.75V6.414l-5.47-5.47a.75.75 0 0 1 1.06-1.06L12 5.303l4.97-4.97a.75.75 0 0 1 1.06 1.06l-5.47 5.47V21a.75.75 0 0 1-.75.75Z"
+        clip-rule="evenodd" />
+    </svg>
+  </button>
+  <!-- End Back to top button -->
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+<!-- https://via.placeholder.com/600x400 -->
