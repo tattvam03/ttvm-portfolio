@@ -7,3 +7,80 @@
     letter-spacing: 0.2em;
     user-select: none;
 }
+
+/* footer.footer {
+    width: 100%;
+} */
+
+footer.footer {
+    width: 100%;         /* full width */
+    height: 200px;        /* increase height/length */
+    padding: 75px 80px;   /* inner spacing */
+    border-top: 0.8px solid white;
+}
+
+
+.footer {
+    background-color: #1b2136;
+    color: #F3F2ED;
+    padding: 2rem 1rem;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__copyright {
+    font-size: 1.3rem;
+    color: #F3F2ED;
+}
+
+.footer__socials {
+    margin-top: 1rem;
+    display:flex;
+    gap: 1.2rem;
+    font-size: 1.5rem;
+}
+
+.footer__right {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer__right a {
+    color: #F3F2ED;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.footer__right a:hover {
+    text-decoration: underline;
+}
+
+/* For larger screens */
+@media (min-width: 768px) {
+    .footer__container {
+    flex-direction: row;
+    align-items: flex-start;
+    }
+
+    .footer__left {
+    align-items: flex-start;
+    }
+
+    .footer__right {
+    justify-content: flex-end;
+    }
+}

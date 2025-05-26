@@ -1,9 +1,9 @@
 :root {
     --clr-dark: #070a13;
     --clr-light: #f1f5f9;
-    --clr-slate400: #94a3b8;
-    --clr-slate600: #475569;
-    --clr-slate800: #1e293b;
+    --clr-slate400: #989898; /* #94a3b8 for main heading and project second paragraph #F0EFE7*/
+    --clr-slate600: #F3F2ED; /* #a7b0bd for hero discription and project first paragraph #F3F2ED*/
+    --clr-slate800: #F3F2ED; /* #6e7b8f for front main name*/
     --clr-rose: #e11d48;
     --clr-indigo: #4f46e5;
 
@@ -46,7 +46,7 @@ html {
 }
 
 body {
-    font-family: 'General Sans', sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: var(--clr-dark);
     color: var(--clr-light);
 }
@@ -71,8 +71,10 @@ button {
 }
 
 a {
-    color: var(--clr-rose);
+    color: var(--clr-indigo);
 }
+
+/* --clr-rose */
 
 strong {
     color: var(--clr-indigo);
@@ -99,9 +101,9 @@ body::-webkit-scrollbar-thumb {
     right: 2rem;     /* Distance from the right */
     background-color: var(--clr-rose); /* Use your theme color */
     color: var(--clr-light);
-    width: 40px;      /* Adjust size as needed */
-    height: 40px;     /* Adjust size as needed */
-    border-radius: 50%; /* Make it rounded */
+    width: 48px;      /* Adjust size as needed */
+    height: 48px;     /* Adjust size as needed */
+    border-radius: 0.5rem; /* Make it rounded */
     display: flex;      /* For centering the icon */
     justify-content: center;
     align-items: center;

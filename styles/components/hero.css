@@ -110,15 +110,15 @@
     }
 
     .hero__subtitle {
-        font-size: var(--size-4xl);
+        font-size: var(--size-5xl);
     }
 
     .hero__title {
-        font-size: var(--size-9xl);
+        font-size: var(--size-8xl);
     }
 
     .hero__description {
-        font-size: var(--size-xl);
+        font-size: var(--size-2xl);
     }
 
     .hero__btn {

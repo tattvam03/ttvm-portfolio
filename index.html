@@ -6,6 +6,12 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <title>Tattvam Chaturvedi</title>
 </head>
 
@@ -70,7 +76,7 @@
             </svg>
         </li>
         <li>
-          <a class="mobile-nav__btn btn" href="#">Resume</a>
+          <a class="mobile-nav__btn btn" href="public/Tattvam_Chaturvedi_Resume.pdf" download>Resume</a>
         </li>
       </ul>
     </nav>
@@ -79,10 +85,11 @@
 
   <main>
     <section class="hero container">
-      <img class="hero__img" src="./main.jpg" alt="Profile picture">
+      <img class="hero__img" src="/main.jpg" alt="Profile picture">
       <h2 class="hero__subtitle">Hi, I'm Tattvam 👋</h2>
-      <h1 class="hero__title">FRONT-END <br>Web Developer</h1>
-      <p class="hero__description">I am a <strong>Web Developer</strong>, I love to code, and make cool things with
+      <h1 class="hero__title">FULL - STACK <br>Web Developer</h1>
+      <p class="hero__description">I am a <strong>Full Stack Developer</strong>, I love to code, and make cool things
+        with
         code. Presently majoring in <strong>Computer Science Engineering</strong>.</p>
       <a class="hero__btn btn" href="mailto:tattvamcodes@gmail.com" target="_blank">Reach Out</a>
     </section>
@@ -98,10 +105,11 @@
             (Brawlhalla, COD, Valorant), and was once a top-tier Free Fire E-sports player.</strong> I also have a thing
           for experimenting with coffee recipes—perfect for fueling those late-night coding sessions. Whether it's
           mountains, sunsets, or just vibing with good music, I find inspiration everywhere.</p>
-        <p class="about__description">I share my journey on X <a>@tattvamcodes</a> — follow along for my projects,
+        <p class="about__description">I share my journey on X <a href="https://x.com/tattvamcodes">@tattvamcodes</a> —
+          follow along for my projects,
           insights, and tech adventures!</p>
         <hr class="about__hr">
-        <h3 class="about__subtitle">Technologies:💻</h3>
+        <h3 class="about__subtitle">Technologies 💻</h3>
         <div class="about__ul-container">
           <ul class="about__ul">
             <li class="about__list">Python</li>
@@ -121,89 +129,27 @@
         <img class="about__img lazy loading" src="https://fakeimg.pl/720" data-src="/about.jpg" alt="Profile picture">
       </div>
     </section>
+
     <section id="featured" class="featured container section">
-      <!-- <h3 class="featured__subtitle">Featured Projects</h3>
-      <div class="featured__wrapper">
-        <h2 class="featured__title">Slaying The Dragon</h2>
-        <a class="featured__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
-          </svg>
-        </a>
-      </div>
-      <p class="featured__description">Cillum voluptate tempor cillum culpa cupidatat labore voluptate ullamco voluptate
-        culpa sunt nulla non. Ad cupidatat dolore quis amet pariatur consectetur ullamco. Officia quis id velit duis
-        cupidatat sunt deserunt do aliquip nulla laboris.</p>
-      <div class="featured__info-container">
-        <div>
-          <h3 class="featured__label">Tech stack</h3>
-          <ul class="featured__tech-stack">
-            <li class="featured__info">MERN</li>
-            <li class="featured__info">AI/ML</li>
-            <li class="featured__info">Python</li>
-            <li class="featured__info">JAVA</li>
-            <li class="featured__info">JAVA</li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="featured__label">Project type</h3>
-          <p class="featured__info">Thesis on ML & DL</p>
-        </div>
-        <div>
-          <h3 class="featured__label">Time-Line</h3>
-          <p class="featured__info">July'2024 - present</p>
-        </div>
-      </div>
-      <div class="featured__img-container">
-        <div class="featured__img-wrapper">
-          <img class="lazy loading" src="https://fakeimg.pl/1123x750" data-src="/first_image.jpeg"
-            alt="Slaying The Dragon first">
-        </div>
-        <div class="featured__img-wrapper">
-          <img class="lazy loading" src="https://fakeimg.pl/1122x750" data-src="/second_image.webp"
-            alt="Slaying The Dragon second">
-        </div>
-        <div class="featured__img-wrapper">
-          <img class="lazy loading" src="https://fakeimg.pl/1125x750" data-src="/third_image.jpeg"
-            alt="Slaying The Dragon third">
-        </div>
-        <div class="featured__img-wrapper">
-          <img class="lazy loading" src="https://fakeimg.pl/1260x734" data-src="/fourth_image.jpeg"
-            alt="Slaying The Dragon fouth">
-        </div>
-        <div class="featured__img-wrapper">
-          <img class="lazy loading" src="https://fakeimg.pl/600x338" data-src="/five_image.jpeg"
-            alt="Slaying The Dragon fiveth">
-        </div>
-        <div class="featured__img-wrapper">
-          <img class="lazy loading" src="https://fakeimg.pl/600x337" data-src="/six_image.jpeg"
-            alt="Slaying The Dragon sixth">
-        </div>
-        <div class="featured__img-wrapper">
-          <img class="lazy loading" src="https://fakeimg.pl/600x400" data-src="/seven_image.jpeg"
-            alt="Slaying The Dragon seveneth">
-        </div>
-        <div class="featured__img-wrapper">
-          <img class="lazy loading" src="https://fakeimg.pl/600x401" data-src="/eight_image.jpeg"
-            alt="Slaying The Dragon eigth">
-        </div>
-      </div> -->
+
     </section>
+
     <section class="work container section">
       <h2 class="work__title">My Projects🚀</h2>
       <p class="work__description">
         I have worked on a diverse range of projects across multiple domains, leveraging various modern technologies to
-        build scalable, efficient, and user-friendly applications. My projects span different fields, including web
-        development, artificial intelligence, drone and robotics, e-commerce, automation, and embedded systems, each
-        utilizing a unique set of tools and frameworks.
+        build scalable, efficient, and user-friendly applications.
       </p>
 
       <div class="work__container">
+
         <!-- project 1 -->
+        <!-- /* project 1 */ -->
         <h3 class="work__project-title">Wax Motif</h3>
         <div class="work__img-wrapper work__image1">
-          <img class="lazy" src="https://fakeimg.pl/900" data-src="public/old-portfolio.png" alt="Old Portfolio image">
+          <!-- ✅ UPDATED data-src to start with './' -->
+          <img class="lazy loading" src="https://fakeimg.pl/900" data-src="/old-portfolio.png"
+            alt="Old Portfolio image">
         </div>
         <div class="work__project work__content1">
           <h3 class="work__project-subtitle">Old Portfolio📑</h3>
@@ -219,7 +165,8 @@
         <!-- project 2 -->
         <h3 class="work__project-title">Draze Force</h3>
         <div class="work__img-wrapper work__image2">
-          <img class="lazy" src="https://fakeimg.pl/900" data-src="public/spy-drone.jpg" alt="Spy-Drone image">
+          <!-- ✅ UPDATED data-src to start with './' -->
+          <img class="lazy loading" src="https://fakeimg.pl/900" data-src="/spy-drone.jpg" alt="Spy-Drone image">
         </div>
         <div class="work__project work__content2">
           <h3 class="work__project-subtitle">Spy-Drone🚁</h3>
@@ -235,7 +182,9 @@
         <!-- project 3 -->
         <h3 class="work__project-title">Artren</h3>
         <div class="work__img-wrapper work__image3">
-          <img class="lazy" src="https://fakeimg.pl/900" data-src="public/Yelpcamp.png" alt="YelpCamp-Campground image">
+          <!-- ✅ UPDATED data-src to start with './' -->
+          <img class="lazy loading" src="https://fakeimg.pl/900" data-src="/Yelpcamp.png"
+            alt="YelpCamp-Campground image">
         </div>
         <div class="work__project work__content3">
           <h3 class="work__project-subtitle">YelpCamp-Campground🏕️</h3>
@@ -254,7 +203,9 @@
         <!-- project 4 -->
         <h3 class="work__project-title">Platform Pro</h3>
         <div class="work__img-wrapper work__image4">
-          <img class="lazy" src="https://fakeimg.pl/900" data-src="public/water-reminder-app.jpg" alt="Water-Reminder-App image">
+          <!-- ✅ UPDATED data-src to start with './' -->
+          <img class="lazy loading" src="https://fakeimg.pl/900" data-src="/water-reminder-app.jpg"
+            alt="Water-Reminder-App image">
         </div>
         <div class="work__project work__content4">
           <h3 class="work__project-subtitle">Water-Reminder-App🔔</h3>
@@ -270,7 +221,8 @@
         <!-- project 5 -->
         <h3 class="work__project-title">Wallys Vegan</h3>
         <div class="work__img-wrapper work__image5">
-          <img class="lazy" src="https://fakeimg.pl/900" data-src="public/diary.png" alt="django-journal image">
+          <!-- ✅ UPDATED data-src to start with './' -->
+          <img class="lazy loading" src="https://fakeimg.pl/900" data-src="/diary.png" alt="django-journal image">
         </div>
         <div class="work__project work__content5">
           <h3 class="work__project-subtitle">django-journal📒</h3>
@@ -288,7 +240,9 @@
         <!-- project 6 -->
         <h3 class="work__project-title">Old Portfolio</h3>
         <div class="work__img-wrapper work__image6">
-          <img class="lazy" src="https://fakeimg.pl/900" data-src="public/url-shortner.png" alt="short-circuit-url image">
+          <!-- ✅ UPDATED data-src to start with './' -->
+          <img class="lazy loading" src="https://fakeimg.pl/900" data-src="/url-shortner.png"
+            alt="short-circuit-url image">
         </div>
         <div class="work__project work__content6">
           <h3 class="work__project-subtitle">short-circuit-url🔗</h3>
@@ -304,25 +258,102 @@
       </div>
     </section>
 
-    <section id="contact" class="contact container section">
-      <h2 class="contact__title">Get In Contact☎️</h2>
-      <p class="contact__description">If you have a project, a business inquiry, or just want to connect, feel free to
-        reach out. I’ll get back to you as soon as possible!🤝</p>
-      <a class="contact__btn btn" href="mailto:tattvamcodes@gmail.com" target="_blank">Reach Out</a>
+    <section class="flex flex-col md:flex-row items-start justify-center min-h-screen px-4 md:px-8 py-10">
+
+      <!-- Left: Contact Form -->
+      <div class="w-full md:w-1/2 max-w-xl bg-gray-800 p-8 rounded-md shadow-md text-lg">
+        <div class="text-center mb-6">
+          <h1 class="text-3xl font-semibold text-gray-100">Contact Me</h1>
+          <p class="text-gray-400">Fill up the form to get in touch with me.</p>
+        </div>
+        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+          <input type="hidden" name="access_key" value="fbf2e9f8-8053-48f4-91f4-10b9b1d63f26" />
+          <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+          <input type="checkbox" name="botcheck" style="display: none;" />
+
+          <div class="mb-4">
+            <label for="name" class="block text-sm text-gray-400 mb-1">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="John Doe" required
+              class="w-full px-4 py-6 rounded text-gray-900 bg-gray-100" />
+          </div>
+
+          <div class="mb-4">
+            <label for="email" class="block text-sm text-gray-400 mb-1">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="you@company.com" required
+              class="w-full px-4 py-6 rounded text-gray-900 bg-gray-100" />
+          </div>
+
+          <div class="mb-4">
+            <label for="phone" class="block text-sm text-gray-400 mb-1">Phone Number</label>
+            <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required
+              class="w-full px-4 py-6 rounded text-gray-900 bg-gray-100" />
+          </div>
+
+          <div class="mb-4">
+            <label for="message" class="block text-sm text-gray-400 mb-1">Your Message</label>
+            <textarea name="message" id="message" rows="4" placeholder="Your Message" required
+              class="w-full px-4 py-6 rounded text-gray-900 bg-gray-100"></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-indigo-600 text-white py-6 rounded hover:bg-indigo-500 transition">Send
+            Message</button>
+          <p class="text-center text-sm text-gray-400 mt-3" id="result"></p>
+        </form>
+      </div>
+
+      <!-- Right: Contact Text -->
+      <div class="w-full md:w-1/2 text-center md:text-left px-4 md:px-10 mt-10 md:mt-0">
+        <h2 class="text-5xl font-extrabold text-center mb-6 text-white">Get In Touch📬</h2>
+        <p class="text-center text-2xl text-gray-300">
+          If you have a project, a business inquiry, or just want to connect,
+          feel free to reach out. I’ll get back to you as soon as possible! 🤝
+        </p>
+        <div class="text-center text-4xl mt-7 flex justify-center space-x-6">
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="#" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+          <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+          <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
     </section>
 
   </main>
-  <footer class="footer container section"></footer>
-  <h3 class="footer__title">~ tattvamcodes ~</h3>
+
+  <footer class="footer section">
+    <div class="footer__container container">
+      <div class="footer__left">
+        <p class="footer__copyright">© 2025. All rights reserved.</p>
+        <div class="footer__socials">
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="#" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+          <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+          <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__right">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
 
   <!-- Back to top button -->
   <button aria-label="back to top" class="back-to-top-btn">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon-up-arrow" viewBox="0 0 24 24" fill="currentColor">
       <path fill-rule="evenodd"
-        d="M12 21.75a.75.75 0 0 1-.75-.75V6.414l-5.47-5.47a.75.75 0 0 1 1.06-1.06L12 5.303l4.97-4.97a.75.75 0 0 1 1.06 1.06l-5.47 5.47V21a.75.75 0 0 1-.75.75Z"
+        d="M4.5 15.75a.75.75 0 0 1 1.06 0L12 9.31l6.44 6.44a.75.75 0 0 1-1.06 1.06L12 11.44l-5.94 5.94a.75.75 0 0 1-1.06-1.06Z"
         clip-rule="evenodd" />
     </svg>
   </button>
+
   <!-- End Back to top button -->
 
   <script type="module" src="./src/main.js"></script>

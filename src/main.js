@@ -13,6 +13,7 @@ import '../styles/utils.css';
 import mobileNav from './utils/mobile-nav';
 import darkMode from './utils/dark-mode';
 import lazyLoading from './utils/lazy-loading';
+import './utils/contact.js';
 
 
 // Back to top button functionality
@@ -51,3 +52,4 @@ mobileNav();
 darkMode();
 lazyLoading();
 backToTopButton(); // Initialize back to top button functionality
+
